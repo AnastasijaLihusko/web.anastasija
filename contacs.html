@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Contacts</h1>
+    <table width="50%" border="1">
+      <tr>
+        <td rowspan="2">11</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <td colspan="4">Большая ячейка</td>
+      <tr></tr>
+    </table>
+
+    <h1>Формы</h1>
+    <form action="" method="post">
+      <fieldset>
+        <legend>User information</legend>
+        <label for="username">Your name</label>
+        <input type="text" name="username" id="username" />
+        <label for="surname">Your surname</label>
+        <input type="text" name="surname" id="surname" />
+        <label for="date">Your date of birth:</label>
+        <input type="date" name="date" id="date" />
+      </fieldset>
+
+      <fieldset>
+        <legend>User password</legend>
+        <label for="pass">Tupe your password:</label>
+        <input type=" password" name="pass" id="pass" />
+        <label for="pass-repead">Repead your password</label>
+        <input type="password" name="pass-repead" id="pass-repead" />
+      </fieldset>
+
+      <fieldset>
+        Ваша любимая марка авто:<br />
+        <input type="radio" name="user_select" id="userselect1" value="Audi" />
+        <label for="userselect1">Audi</label><br />
+        <input type="radio" name="user_select" id="userselect2" value="Ford" />
+        <label for="user_select2">Ford</label><br />
+        <input type="radio" name="user_select" id="userselect3" value="BMW" />
+        <label for="user_select3">BMW</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="job">Выберите професию:</label>
+        <select name="job" id="job">
+            <option value="">-</option>
+          <option value="программист">программист</option>
+          <option value="бухгалтер">бухгалтер</option>
+          <option value="преподаватель">преподаватель</option>
+        </select>
+        <div>
+          <label>Ваше место работы</label> <br />
+          <input type="date" name="" id="" placeholder="Дата начала" />
+          -
+          <input type="date" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="bio">Ваша биография:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea><br>
+
+        <label for="avatar">Ваша фотография</label><br>
+        <input type="file" name="avatar" id="avatar" accept="image/*" multiple>
+      </fieldset>
+
+      <input type="submit" value="сохранить" />
+      <input type="reset" value="очистить форму" />
+
+      <input type="number" name="number" id="" max="100" min="0"step="30">
+      <input type="range" name="number2" id="" max="100" min="50">
+    </form>
+  </body>
+</html>

@@ -6,35 +6,105 @@
     <title>Document</title>
     <style>
       body {
-        background-color: rgb(248, 233, 210);
+        background: rgb(34,193,195);
+background: linear-gradient(0deg, rgb(226, 243, 243) 0%, rgba(253,187,45,1) 100%);
+        ;
       }
       nav a {
         text-align: right;
-         color: rgb(66, 61, 61);
+        color: rgb(66, 61, 61);
       }
       p {
-         text-align: left;
+        text-align: left;
         color: rgb(8, 8, 8);
       }
-      
+      .navbar{
+        width: 100%;
+        height: 70px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+      }
+      .navbar .container{
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         }
+         .navbar-menu{
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0;
+         }
+         .navbar-menu li{
+            display:inline-block
+         }
+         .navbar-menu li a{
+            display:inline-block;
+            color: #000;
+            opacity: 0.6;
+            text-decoration: none;
+            padding: 10px;
+            transition: all .07s ease-in-out;
+         } 
+         .navbar-menu li a:hover{
+            opacity: 1;
+         }
+         .navbar-wrap{
+            display: flex;
+            flex-flow: row nowrap;
+         }
+         .callback{
+            margin-left: 30px;
+            padding: 20px 30px;
+            background-color: #fa8424;
+            border-radius: 100px;
+            color: aliceblue;
+            text-decoration: none;
+            transition: all .1s ease-in-out;
+         }
+         .callback:hover{
+            transform: scale(1.04);
+            color: aliceblue;
+         }
+         .navbar-brand{
+            font-weight: 700;
+            font-size: 26px;
+            text-decoration: none;
+            color: black;
+         }
+         .navbar-brand:hover{
+            color: #fa8424;
+            transition: all .07s ease-in-out;
+         }
+        .img{
+        margin: 0px auto 0px auto;
+        display: block;
+        }
     </style>
   </head>
   <body>
-    <section id="nav">
-      <nav>
-        <ul>
-          <a href="./index.html">Главная</a>
-          <a href="Proekt.html">Проекты</a>
-          <a href="Kontakt.html">Контакты</a>
-        </ul>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="navbar-brand"></a> 
+    <div class="navbar-wrap">
+        <ul class="navbar-menu">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="Proekt.html">Проекты</a></li>
+            <li><a href="Kontakt.html">Контакты</a></li>
+          </ul>
+  
+          <a href="#" class="callback">Обратный звонок</a> 
+    </div>
+       
+      </div>
     </nav>
-    </section>
-    <img src="./image/пространство.gif" alt="foto" width="300px" />
+    <section id="img"> 
+<img src="./image/пространство.gif" alt="foto" width="300px" />
     <img
       src="https://adukar.by/images/photo/organizator-prostranstva-7.jpg"
       alt="html"
       width="300px"
     />
+</section>
     <h1>
       <i>Организация пространства у частных лиц/коммерческих помещений.</i>
     </h1>
